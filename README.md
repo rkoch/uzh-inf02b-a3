@@ -48,7 +48,7 @@ Repo Structure
 
 * Each assignment task is in its own subfolder from (`Task_A` to `Task_E`)
 * In each task folder you will find all relevant eclipse project settings and a makefile in order to build this task. Of course the source code is located in the sub-folder `src/`.
-* I usually do not provide the original source code in the initial commit and initial tag (`initial`) so you have to copy-paste the provided sources for each task by yourself.
+* ~~I usually do not provide the original source code in the initial commit and initial tag (`initial`) so you have to copy-paste the provided sources for each task by yourself.~~ Screw it. Just checkout the `initial` tag and start hacking with the provided source files.
 
 
 Disclaimer
