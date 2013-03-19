@@ -6,6 +6,9 @@
  * Vizualization and Multimedia Laboratory
  *
  * Author: Genc Mazlami
+ *
+ * Authored by Remo Koch
+ * Public repository at https://github.com/rkoch/uzh-inf02b-a3
  */
 
 #include <iostream>

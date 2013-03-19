@@ -6,11 +6,14 @@
  * Vizualization and Multimedia Laboratory
  *
  * Author: Genc Mazlami
+ *
+ * Authored by Remo Koch
+ * Public repository at https://github.com/rkoch/uzh-inf02b-a3
  */
 
-#include<cstdlib>
-#include<iostream>
-#include<string>
+#include <cstdlib>
+#include <iostream>
+#include <string>
 #include "KeyValuePair.h"
 
 class TreeNode {
@@ -22,6 +25,11 @@ private:
 	TreeNode* left_child;
 
 	TreeNode* right_child;
+
+	/**
+	 * 1) Printing element of current node to stdout
+	 */
+	void printElement();
 
 public:
 
