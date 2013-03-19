@@ -1,11 +1,17 @@
+//
+//  Authored by Remo Koch
+//  Public repository at https://github.com/rkoch/uzh-inf02b-a3
+//
+
 #include "DoublyLinkedListNode.hpp"
 
+#include <iostream>
 #include <cassert>
 
 // constructor of a doubly linked list node. The previous and next pointer are initialized with
 // null and the value member is initialized with provided argument.
 DoublyLinkedListNode::DoublyLinkedListNode(double value)
-		: node_value(value), previous_node(0), next_node(0) {
+		: node_value(value), next_node(0), previous_node(0) {
 }
 
 DoublyLinkedListNode* DoublyLinkedListNode::get_next() {
@@ -32,14 +38,20 @@ double DoublyLinkedListNode::get_value() {
 	return node_value;
 }
 
+/*
+ * 1) insert_as_next_node
+ */
 void DoublyLinkedListNode::insert_as_next_node(DoublyLinkedListNode* new_next) {
-	// TODO
-	// complete this method
-	// use the assert method to check if the properness of the used pointers
+	assert(new_next);
+	next_node = new_next;
+	new_next->set_prev(this);
 }
 
+/**
+ * 2) insert_as_previous_node
+ */
 void DoublyLinkedListNode::insert_as_previous_node(DoublyLinkedListNode* new_prev) {
-	// TODO
-	// complete this method
-	// use the assert method to check if the properness of the used pointers
+	assert(new_prev);
+	previous_node = new_prev;
+	new_prev->set_next(this);
 }

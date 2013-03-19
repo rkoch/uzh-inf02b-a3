@@ -1,3 +1,8 @@
+//
+//  Authored by Remo Koch
+//  Public repository at https://github.com/rkoch/uzh-inf02b-a3
+//
+
 #ifndef DOUBLY_LINKED_LIST_H
 #define DOUBLY_LINKED_LIST_H
 
@@ -8,6 +13,7 @@ class DoublyLinkedList {
 
 public:
 	DoublyLinkedList();          // constructor
+	~DoublyLinkedList();         // destructor
 
 	void push_front(double value);
 	void push_back(double value);

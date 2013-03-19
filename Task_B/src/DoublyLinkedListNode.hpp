@@ -1,3 +1,8 @@
+//
+//  Authored by Remo Koch
+//  Public repository at https://github.com/rkoch/uzh-inf02b-a3
+//
+
 #ifndef DOUBLY_LINKED_LIST_NODE_HPP
 #define DOUBLY_LINKED_LIST_NODE_HPP
 
